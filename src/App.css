@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(252, 167, 56);
+}
+
+.body {
+    display: flex;
+}
+
+.App {
+    margin: auto;
+    margin-top: 30px;
+    align-items: flex-start;
+    color: white;
+    background-color: rgb(255, 145, 0);
+    min-width: 600px;
+    padding: 20px;
+}
+
+.check {
+    background-color: rgb(59, 204, 59);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.trash {
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.task-to-do {
+    color: black;
+    background-color: white;
+    flex-grow: 1;
+    margin-bottom: 8px;
+    height: 30px;
+}
+
+.task-body {
+    display: flex;
+}
+
+.tasks-list {
+    list-style-type: none;
+}
+
+.form-input {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    height: 35px;
+}
+
+
+.form-input > input {
+    width: 350px;
+    height: 35px;
+    outline: 0;
+    border: 0px;
+}
+
+
+.form-input > .select {
+    margin-left: auto;
+}
+
+.select {
+    position: relative;
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+select {
+    outline: 0px;
+    box-shadow: none;
+    border: 0 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 120px;
+    height: 20px;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background-color: red;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    cursor: pointer;
+    height: 20px;
+}
+
+.add-to-list {
+    width: 30px;
+    height: 100%;
+    background-color: rgb(240, 240, 239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-to-list:hover {
+    background-color: red;
+
+}
+
+.add-to-list > i {
+    background-color: red;
+    padding: 2px;
+}
+
+.line-throught {
+    text-decoration: line-through;
+    opacity: 0.8;
+}
